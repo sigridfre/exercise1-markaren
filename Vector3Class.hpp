@@ -14,9 +14,7 @@ public:
   Vector3Class(): Vector3Class(0,0,0) {}
   Vector3Class(float x, float y, float z) : x(x), y(y), z(z) {}
 
-  Vector3Class add(const Vector3Class& other) const {
-    return {x + other.x, y + other.y, z + other.z};
-  }
+  Vector3Class add(const Vector3Class& other) const;
 
   Vector3Class operator+(const Vector3Class& other) const {
     return add(other);
