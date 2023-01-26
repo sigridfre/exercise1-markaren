@@ -14,9 +14,9 @@ std::string Person::getFirstName() const {
 }
 
 void Person::setFirstName(const std::string &firstName) {
-  if (firstName.empty())
-    return;
-  firstName_ = firstName;
+  if (!firstName.empty()) {
+    firstName_ = firstName;
+  }
 }
 
 std::string Person::getLastName() const {
@@ -24,9 +24,9 @@ std::string Person::getLastName() const {
 }
 
 void Person::setLastName(const std::string &lastName) {
-  if (lastName.empty())
-    return;
-  lastName_ = lastName;
+  if (!lastName.empty()) {
+    lastName_ = lastName;
+  }
 }
 
 std::string Person::getFullName() const {
@@ -56,11 +56,9 @@ bool ais1002::containsFirstName(const std::vector<Person> &persons, const std::s
 }
 
 int ais1002::countLastName(const std::vector<Person> &persons, const std::string &lastname) {
-  int count  = 0;
+  int count = 0;
   for (const auto& p : persons) {
     if (p.getLastName() == lastname) count++;
   }
   return count;
 }
-
-
