@@ -62,3 +62,4 @@ int ais1002::countLastName(const std::vector<Person> &persons, const std::string
   }
   return count;
 }
+
