@@ -1,9 +1,9 @@
 
-#include "Vector3Class.hpp"
+#include "Vector3.hpp"
 
 int main() {
 
-  Vector3Class c;
+  Vector3 c;
 
 
 }
